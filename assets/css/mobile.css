@@ -1,0 +1,121 @@
+/* mobile */
+
+@media (max-width: 739px) {
+    .list-link {
+        display: none;
+    }
+
+    .app__container {
+        margin-top: 110px;
+    }
+
+    .logo {
+        margin-left: 24px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 30px;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .search-icon {
+        background-color: transparent;
+        font-size: 1.8rem;
+        color: var(--pctext-color);
+    }
+
+    .slide__bg-title {
+        font-size: 1.8rem;
+    }
+
+    .slide__bg-caption {
+        width: 60%;
+        font-size: 1.4rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        margin-left: 24px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .menu-icon:hover {
+        color: var(--primary);
+    }
+
+    .item-link {
+        font-size: 1rem;
+    }
+    
+    .elementor__section{
+        margin: 50px 10px;
+    }
+    .elementor__section-item {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .introduce__section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px 50px;
+    }
+
+    .introduce__section-content {
+        width: 100%;
+    }
+
+    .introduce__section-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .foodblog {
+        padding: 50px 10px;
+    }
+
+    .foodblog__list {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    .foodblog__link {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .booktour__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__end {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    /* index2 */
+    .main {
+        padding: 0 10px;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1079px) {
+    .elementor__section-item {
+        margin-top: 20px;
+    }
+
+    .foodblog__list {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    .foodblog__link {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,460 @@
+/* index */
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 10;
+    box-shadow: 0 10px 25px -16px rgba(0,0,0,0.3);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.list-link {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.item-link {
+    font-size: 1.8rem;
+    list-style: none;
+    color: var(--pctext-color);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.item-link:hover {
+    color: var(--primary);
+}
+
+.item-link:not(:last-child) {
+    margin-right: 14px;
+}
+
+.logo img{
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.search {
+    display: flex;
+    margin-right: 28px;
+
+}
+
+.search-input {
+    font-size: 1.4rem;
+    max-width: 240px;
+    padding: 4px 12px;
+    outline: none;
+    border-right: 0;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-icon {
+    font-size: 1.4rem;
+    padding: 10px 14px;
+    color: var(--white);
+    background-color: var(--pctext-color);
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.search-icon:hover {
+    background-color: var(--primary);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.menu-item {
+    list-style: none;
+    
+    cursor: pointer;
+    
+}
+
+
+.menu-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.item-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--pctext-color);
+    font-weight: 600;
+    transition: 0.4s;
+}
+.item-link.active {
+    color: var(--primary);
+}
+
+
+.item-link:hover {
+    color: var(--primary);
+}
+
+
+/* container */
+.app__container {
+    margin-top: 124px;
+}
+
+.slide__bg {
+    width: 100%;
+    position: relative;
+    max-height: 530px;
+}
+
+.slide__bg-image { 
+    width: 100%;
+    max-height: 530px;
+    object-fit: cover;
+}
+
+.slide__bg-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.slide__bg-title {
+    font-size: 3.6rem;
+    color: var(--white);
+}
+
+.slide__bg-caption {
+    margin-top: 16px;
+    width: 40%;
+    font-size: 2.0rem;
+    color: var(--white);
+}
+
+
+.elementor__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    column-gap: 20px;
+    margin:0 90px;
+    padding-top:100px;
+ 
+}
+
+.elementor__section-item {
+    min-height: 300px;
+    padding: 15px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.elementor__section-body {
+    padding: 40px;
+    
+}
+
+.elementor__section-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.elementor__section-content {
+    margin-top: 8px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+
+.introduce__section {
+    margin: 0 90px 70px;
+    padding-top:120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    column-gap: 20px;
+
+}
+
+
+
+.introduce__section-content-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduce__section-content-fig {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.introduce__section-content-caption {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.introduce__section-content-title {
+    margin-top: 20px;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.introduce__section-content-paragraph, .content {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.introduce__section-btn {
+    margin-top: 30px;
+    
+}
+
+.introduce__section-btn:hover,
+.booktour__btn:hover {
+    color: var(--primary);
+    background-color: var(--bg-color);
+}
+
+.introduce__section-image {
+  
+}
+.introduce__section-image img {
+    width: 100%;
+}
+
+
+.foodblog {
+    background-color: var(--bg-color);
+    padding: 120px 90px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foodblog__caption,
+.booktour__item-caption {
+    font-size: 1.5rem;
+    font-weight:bold;
+    color: var(--primary);
+    text-transform: uppercase;
+    
+    margin-bottom: 10px;
+}
+
+.foodblog__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 12px;
+
+}
+
+.foodblog__summary {
+    width: 60%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.foodblog__list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.foodblog__link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.foodblog__item {
+
+    background-color: var(--white);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.foodblog__item-img {
+    width: 100%;
+    border-radius: 5px;
+}
+.foodblog__item-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.foodblog__item-content {
+    margin-top: 12px;
+
+}
+
+.foodblog__item-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+
+.foodblog__item-title:hover {
+    color: var(--primary);
+}
+
+.foodblog__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    font-size: 1.4rem;
+}
+
+.foodblog__item-author:not(span) {
+    text-decoration: underline;
+}
+
+.foodblog__item-author span{
+    
+    color: var(--text-color);
+}
+.foodblog__item-time {
+    color: var(--text-color);
+}
+
+
+.booktour {
+    padding-top: 100px;
+    width: 100%;
+}
+
+.booktour__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booktour__item {
+    position: relative;
+    height: 525px;
+    min-height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.booktour__item:first-child {
+    background-image: url('/assets/image/image6.jpg');
+  
+}
+.booktour__item:last-child {
+    background-image: url('/assets/image/image7.jpg');
+   
+}
+
+.booktour__item-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.booktour__item-content {
+    text-align: center;
+    padding: 60px 30px;
+    z-index: 1;
+   
+
+}
+
+.booktour__item-title {
+    font-size: 3.6rem;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.booktour__item-summary {
+   font-size: 1.5rem;
+   color: var(--white);
+   margin-bottom: 24px;
+   padding: 0 40px;
+}
+
+
+/* footer */
+
+#footer {
+    background-color: #111111;
+    color: #999999;
+    padding: 30px;
+}
+
+.footer__end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+
+}
+
+
+.footer__end-link {
+    margin-left: 4px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footer__end-link:hover {
+    text-decoration:underline;
+}
+
+
+
+
